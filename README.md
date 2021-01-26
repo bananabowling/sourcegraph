@@ -37,6 +37,8 @@ Edit the `server` block of ~/.sourcegraph/config/nginx.conf to look like this:
 
 Edit /etc/hosts (with sudo) and add a line `127.0.0.1 codesearch.com` so that https://codesearch.com:7080 points to your local sourcegraph instance.
 
+Head to the "Site configuration"(https://codesearch.com:7080/site-admin/configuration) page of Sourcegraph and set "externalURL" to `https://codesearch.com:7080`
+
 Go to the Sourcegraph extension settings page: chrome-extension://dgjhfomjieaadpoljlnidmbgkdffpack/options.html
 
 Set the Sourcegraph URL to `https://codesearch.com:7080`
