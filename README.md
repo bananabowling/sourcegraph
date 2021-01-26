@@ -7,13 +7,13 @@ Access the web UI at http://localhost:7080 and follow the prompt to create an ac
 # Configure
 Generate a personal access token on GitHub: https://github.com/settings/tokens
 
-Click on "Manage Repositories"(https://codesearch.com:7080/site-admin/external-services) in Sourcegraph and set the configuration below with the access token you generated. Optionally, change the repositories section to match whichever ones you'd like search over.
+Go to the ["Manage Repositories"](https://codesearch.com:7080/site-admin/external-services) page in Sourcegraph and set the configuration below with the access token you generated. Optionally, change the repositories section to match whichever ones you'd like search over.
 
 ![Repository Config](/config.png)
 
 # GitHub Extension Setup
 
-While Sourcegraph has a nice "View in GitHub" button, the reverse doesn't exist unless you setup the Sourcegraph Chrome extension (which has a bunch of other nice features too): https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack?hl=en
+While Sourcegraph has a nice "View in GitHub" button, the reverse doesn't exist unless you setup the [Sourcegraph Chrome extension](https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack?hl=en) (which has a bunch of other nice features too): 
 
 Unfortunately, it requires setting up SSL on our local Sourcegraph instance.
 
@@ -37,8 +37,6 @@ Edit the `server` block of ~/.sourcegraph/config/nginx.conf to look like this:
 
 Edit /etc/hosts (with sudo) and add a line `127.0.0.1 codesearch.com` so that https://codesearch.com:7080 points to your local sourcegraph instance.
 
-Head to the "Site configuration"(https://codesearch.com:7080/site-admin/configuration) page of Sourcegraph and set "externalURL" to `https://codesearch.com:7080`
+Head to the ["Site configuration"](https://codesearch.com:7080/site-admin/configuration) page of Sourcegraph and set "externalURL" to `https://codesearch.com:7080`
 
-Go to the Sourcegraph extension settings page: chrome-extension://dgjhfomjieaadpoljlnidmbgkdffpack/options.html
-
-Set the Sourcegraph URL to `https://codesearch.com:7080`
+Go to the Sourcegraph extension settings page and set "Sourcegraph URL" to `https://codesearch.com:7080`
