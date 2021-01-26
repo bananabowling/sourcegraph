@@ -10,7 +10,7 @@ Go to the ["Manage Repositories"](http://localhost:7080/site-admin/external-serv
 
 ![Repository Config](/config.png)
 
-After you save, the repositories you selected should start getting indexed. Once this is done, you can start [using Sourcegraph](https://docs.sourcegraph.com/code_search/tutorials/examples)!
+After you click "Update Repositories", Sourcegraph begins to index the selected repos. Once this is done, you can start [using Sourcegraph.](https://docs.sourcegraph.com/code_search/tutorials/examples)
 
 # Chrome Extension Setup (for GitHub integration)
 
