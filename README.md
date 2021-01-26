@@ -7,11 +7,11 @@ Access the web UI at http://localhost:7080 and follow the prompt to create an ac
 # Configure
 Generate a personal access token on GitHub: https://github.com/settings/tokens
 
-Go to the ["Manage Repositories"](https://codesearch.com:7080/site-admin/external-services) page in Sourcegraph and set the configuration below with the access token you generated. Optionally, change the repositories section to match whichever ones you'd like search over.
+Go to the ["Manage Repositories"](http://localhost:7080/site-admin/external-services) page in Sourcegraph and set the configuration below with the access token you generated. Optionally, change the repositories section to match whichever ones you'd like search over.
 
 ![Repository Config](/config.png)
 
-# GitHub Extension Setup
+# Chrome Extension Setup (for GitHub integration)
 
 While Sourcegraph has a nice "View in GitHub" button, the reverse doesn't exist unless you setup the [Sourcegraph Chrome extension](https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack?hl=en) (which has a bunch of other nice features too): 
 
